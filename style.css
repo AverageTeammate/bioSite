@@ -10,73 +10,119 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EAE0C8;
-  }
-  
-  header {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-y: auto; /* Allows vertical scrolling when necessary */
+}
+
+header {
     background-color: #2C3E50;
     padding: 15px;
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     margin: 0 10px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-  }
-  
-  header nav ul li a:hover {
+}
+
+header nav ul li a:hover {
     text-decoration: underline;
     color: #D4AF37;
-  }
-  
-  section {
+}
+
+section {
     padding: 40px;
     text-align: center;
-  }
-  
-  .section-landing {
+}
+
+.section-landing {
     background-color: #7D1538;
     color: #FFFFFF;
     padding: 60px;
-  }
-  
-  .section-landing img {
+}
+
+.section-landing img {
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
     border-radius: 8px;
-  }
-  
-  .section-about,
-  .section-hobbies {
+}
+
+/* Common section styles */
+.section-about,
+.section-hobbies {
     margin: 40px auto;
-  }
-  
-  .section-about img,
-  .section-hobbies img {
+    max-width: 1200px;
+}
+
+/* Title styling */
+.section-about h2,
+.section-hobbies h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Image gallery styling for both about and hobbies sections */
+.section-about .image-gallery,
+.section-hobbies .hobby-gallery {
+    display: flex;
+    flex-direction: row; /* Ensures horizontal layout */
+    justify-content: center; /* Centers images horizontally */
+    gap: 30px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.section-about .image-gallery figure,
+.section-hobbies .hobby-gallery figure {
+    margin: 0;
+    text-align: center;
+    max-width: 30%;
+    flex: 1; /* Ensures equal spacing */
+}
+
+.section-about img,
+.section-hobbies img {
     width: 100%;
-    max-width: 300px;
-    margin: 10px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 2px 2px 5px #5F6A72;
-  }
-  
-  footer {
+    object-fit: cover; /* Maintains image aspect ratio */
+}
+
+.section-about figcaption,
+.section-hobbies figcaption {
+    font-style: italic;
+    margin-top: 5px;
+    color: #5F6A72;
+    font-size: 0.9em;
+}
+
+/* Paragraph styling for biography section */
+.section-about p {
+    max-width: 900px;
+    line-height: 1.6;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+/* Footer Styling */
+footer {
     background-color: #2C3E50;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
-  }
-  
+}
