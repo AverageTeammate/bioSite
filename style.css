@@ -1,0 +1,82 @@
+/* Jacob Cannamela */
+/* CSD340 */
+/* Assignment 5 */
+/* 1.21.2025 */
+
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    color: #2C3E50;
+    margin: 0;
+    padding: 0;
+    background-color: #EAE0C8;
+  }
+  
+  header {
+    background-color: #2C3E50;
+    padding: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+    color: #D4AF37;
+  }
+  
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .section-landing {
+    background-color: #7D1538;
+    color: #FFFFFF;
+    padding: 60px;
+  }
+  
+  .section-landing img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .section-about,
+  .section-hobbies {
+    margin: 40px auto;
+  }
+  
+  .section-about img,
+  .section-hobbies img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #5F6A72;
+  }
+  
+  footer {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+  }
+  
